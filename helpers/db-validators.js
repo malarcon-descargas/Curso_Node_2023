@@ -2,7 +2,7 @@ const Role = require('../models/role');
 const Usuario = require('../models/usuario');
 
 const existeRol = async(nombre = '') => {
-     const existeRol = await Role.findOne({nombre});
+    const existeRol = await Role.findOne({nombre});
     if ( !existeRol ) {
         throw new Error(`El rol: ${nombre} no está registrado.`);
     }
