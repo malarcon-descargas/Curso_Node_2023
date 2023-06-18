@@ -40,6 +40,10 @@ const login = async(req, res = response) => {
             token
         })
     } catch (error) {
+<<<<<<< HEAD
+=======
+        console.log(error)
+>>>>>>> 38663ebd8bfb38eec714f51891b97cec429f1eef
         res.status(500).json({
             msg: 'Hable con el administrador'
         });
